@@ -15,9 +15,7 @@ test.describe('vinted', () => {
     await ai("Scroll down to the 1st product")
     await ai("Click the 2nd product from the 1st row in the product list")
     
-    expect(page.url()).toContain("/item/")
+    expect(page.url()).toContain("/items/")
     await aiAssert("Price is visible")
   })
-
-
 })
