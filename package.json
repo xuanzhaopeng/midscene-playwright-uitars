@@ -4,20 +4,21 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@midscene/web": "^0.12.0",
     "@playwright/test": "^1.50.1",
     "@types/node": "^22.13.5",
-    "typescript": "^5.7.3",
-    "@eslint/js": "^9.18.0",
+    "dotenv": "^16.4.7",
     "eslint": "^9.18.0",
     "eslint-plugin-playwright": "^2.1.0",
-    "typescript-eslint": "^8.20.0",
-    "@midscene/web": "^0.12.0",
-    "dotenv": "^16.4.7"
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0"
   },
   "scripts": {
     "e2e": "playwright test --config=playwright.config.ts",
     "e2e:cache": "MIDSCENE_CACHE=true playwright test --config=playwright.config.ts"
   },
   "dependencies": {
+    "@midscene/core": "/Users/zhaopeng/cf/midscene/packages/midscene"
   }
 }

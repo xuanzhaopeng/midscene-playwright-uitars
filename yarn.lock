@@ -635,20 +635,18 @@
     zod "^3.22.4"
     zod-to-json-schema "^3.22.3"
 
-"@midscene/core@0.12.0":
+"@midscene/core@0.12.0", "@midscene/core@file:../midscene/packages/midscene":
   version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@midscene/core/-/core-0.12.0.tgz#5ffba95d1ad060d15ef7a60641d33568e4a4b454"
-  integrity sha512-Ug0NKI73QCTLTdun0gAbIoreKzhK7aTkALto+zvSUZgbwgs7pa7pFQvz+Dg8+IZJ7lfdOQkxIp+qyTki5I2rtg==
   dependencies:
     "@anthropic-ai/sdk" "0.33.1"
     "@azure/identity" "4.5.0"
     "@langchain/core" "0.3.26"
-    "@midscene/shared" "0.12.0"
+    "@midscene/shared" "workspace:*"
     "@ui-tars/action-parser" "1.0.1"
     openai "4.81.0"
     socks-proxy-agent "8.0.4"
 
-"@midscene/shared@0.12.0":
+"@midscene/shared@0.12.0", "@midscene/shared@workspace:*":
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/@midscene/shared/-/shared-0.12.0.tgz#468bc14784077d1abb986cd54adefe11e5836bab"
   integrity sha512-bDQ9Zl6NDPrv/+kU0Pr0zAESbAK9sE2T/vXR6n0E2a1JtCQaBgB90AOnA/OHV43vAUAOgQYaE70tIattC01H5Q==
