@@ -1,11 +1,5 @@
 # Midscene Playwright Uitars Example
 
-<p align="center">
-  <video width="600" controls>
-  <source src="https://youtu.be/36EEQ922a5c?si=1lBv40MlOLfJXS8s" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-</p>
 
 ![UI-Tars:7B](./demo/example-code.png)
 
