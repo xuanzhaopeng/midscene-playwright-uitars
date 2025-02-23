@@ -1,5 +1,8 @@
 # Midscene Playwright Uitars Example
 
+<p align="center" width="50%">
+  <video height="400" src="https://github.com/user-attachments/assets/45926a81-babe-45cb-a3f9-1019958a6c35" />
+</p>
 
 ![UI-Tars:7B](./demo/example-code.png)
 
