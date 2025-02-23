@@ -19,6 +19,15 @@ The demo are created with following base tools:
 
 - It's not ready for production usage yet.
 
+## GPU Usages 
+When I execute the same test, here are the GPU usages for `UI-Tars:7B` and `UI-Tars:72B`
+
+![UI-Tars:7B](./demo/ui-tars-7b-sft-gpu-usages.png)
+(GPU Usage for UI-Tars:7B, with LS40s, 1 x GPU, 48GB GPU memory, 7 x vCPU, 30GB memory )
+
+![UI-Tars:72B](./demo/ui-tars-72b-sft-gpu-usages.png)
+(GPU Usage for UI-Tars:72B, with LS40s, 8 x GPU, 384GB GPU memory, 190 x vCPU, 1532GB memory )
+
 ## Quick start
 ```bash
 yarn
