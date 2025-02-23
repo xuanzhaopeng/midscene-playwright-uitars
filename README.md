@@ -1,5 +1,13 @@
 # Midscene Playwright Uitars Example
 
+<p align="center">
+  <video width="600" controls>
+  <source src="./demo/demo-midscene-uitars-pw.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+</p>
+
 ## Introduction
 This is a Proof of Concept for AI-powered automated E2E testing, by using [Midscene](https://github.com/web-infra-dev/midscene) with [UI-Tars LLM](https://github.com/bytedance/UI-TARS), on top of Playwright.
 
