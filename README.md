@@ -5,8 +5,10 @@
   <source src="https://youtu.be/36EEQ922a5c?si=1lBv40MlOLfJXS8s" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
 </p>
+
+![UI-Tars:7B](./demo/example-code.png)
+
 
 ## Introduction
 This is a Proof of Concept for AI-powered automated E2E testing, by using [Midscene](https://github.com/web-infra-dev/midscene) with [UI-Tars LLM](https://github.com/bytedance/UI-TARS), on top of Playwright.
