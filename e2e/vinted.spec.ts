@@ -21,7 +21,7 @@ test.describe('vinted', () => {
   })
 
 
-  test("[UI-Tars - Business]a user can search then view a product", async ({ page, ai, aiAssert, aiWaitFor }) => {
+  test.skip("[UI-Tars - Business]a user can search then view a product", async ({ page, ai, aiAssert, aiWaitFor }) => {
     await page.goto("https://www.vinted.com")
    
     await aiWaitFor('The country selection popup is visible')
@@ -50,4 +50,13 @@ test.describe('vinted', () => {
     expect(page.url()).toContain("/items/")
     await aiAssert("Price is visible")
   })
+
+  test("a single description", async ({ page, ai, aiAssert }) => {
+    await page.goto("https://www.vinted.com")
+   
+    await ai('I accept whatever it shows up first, after the page is ready to interect, I can search "Chanel", and I open the 2nd product from the search result')
+    await aiAssert("I'm viewing the pruduct detail page")
+    await aiAssert("The Price is visible")
+  })
+
 })
