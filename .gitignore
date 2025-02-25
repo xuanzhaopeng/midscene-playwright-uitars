@@ -5,7 +5,8 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
-/midscene_run/
+/midscene_run/dump
+/midscene_run/report
 .env
 .env.*
 !.env.example

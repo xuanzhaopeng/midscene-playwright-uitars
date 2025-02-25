@@ -2,6 +2,7 @@ import { expect } from "@playwright/test";
 import { test } from "./fixture";
 import { LangchainEmbedding } from "./embeddings/langchain-embedding";
 import { Document } from "langchain/document";
+import { v4 as uuidv4 } from "uuid";
 
 test.describe('miro', () => {
     const rag = new LangchainEmbedding()
@@ -18,22 +19,31 @@ test.describe('miro', () => {
         ])
     })
 
-    test("for canvas testing", async ({ page, ai, aiAssert }) => {
+    test.skip("for canvas testing", async ({ page, ai, aiWaitFor, aiAssert }) => {
         // Requires changes from Midscene - (https://github.com/web-infra-dev/midscene/issues/426)
         // const searchedRag:string = await rag.search(`I am a free plan customer, I am in the dashboard page, I create a team board. After I am in the board page, I close all popups first, and I create a sticky note with text "I am AI Agent" in the center of the screen.`)
 
         await page.goto("https://miro.com/app/dashboard")
         expect(page.url()).toBe("https://miro.com/app/dashboard/")
-        /*
-        await ai(`I am a free plan user, I am in the dashboard page, I create a board.
-            When a board is created, I was be navigated to the board page.
-            So I **must** wait until the Template Popup is visible.
-            And If there is a popup about template, I don't use any template.
-            then I create a default sticky note with text "I am AI Agent" in the center of the screen.`)
-        await aiAssert(`a sticky note contains exact text "I am AI Agent" is visible`)*/
-        await ai(`I create a new blank board.
-            In the board, I create a sticky note.
-            And I put "I am an AI Agent" to the sticky note`)
+        
+        await ai(`A free plan user creates a new board without upgrade, and don't close template popup`)
+        await aiWaitFor(`the template popup is visible`)
+        await ai(`the user closes the template popup`)
+        await ai(`the user creates a sticky note, with text "I am an AI Agent"`)
+        await aiAssert(`a sticky note contains exact text "I am an AI Agent" is visible`)
+    })
+
+
+    test("for canvas testing a single reasoning", async ({ page, ai, aiAssert }) => {
+        await page.goto("https://miro.com/app/dashboard")
+        expect(page.url()).toBe("https://miro.com/app/dashboard/")
+
+        await ai(`
+            **ID: ${ uuidv4() }, this is a completely *new* order, forget all memory**
+
+            Given A free plan user#A creates a new board without upgrade,
+            When the user#A closes the template popup,
+            And the user#A creates a sticky note with desired input "I am an AI Agent"`)
         await aiAssert(`a sticky note contains exact text "I am an AI Agent" is visible`)
     })
 })
