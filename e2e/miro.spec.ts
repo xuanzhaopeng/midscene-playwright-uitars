@@ -14,7 +14,7 @@ test.describe('miro', () => {
         await page.goto("https://miro.com/app/dashboard")
         expect(page.url()).toBe("https://miro.com/app/dashboard/")
         await ai(`I am a free plan customer, I am in the dashboard page, I create a team board.${actionRag}`)
-        await ai(`After I am in the board page, I close whatever popup, and I create a sticky note with text "I am AI Agent" in the center of the screen. ${actionRag}`)
+        await ai(`After I am in the board page, I close all popups first, and I create a sticky note with text "I am AI Agent" in the center of the screen. ${actionRag}`)
         await aiAssert(`a sticky note with text "I am AI Agent" is visible in the canvas`)
     })
 })

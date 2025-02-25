@@ -22,10 +22,10 @@
     },
     {
       "name": "token",
-      "value": "b7RiXLesf9ZxBryYEttBD4QhaTkcWn79g9aZW5LIELRSwqanZZ1fqmcINV2RvLSd",
+      "value": "CE3FeeKcg9fXiShXugCDHAuH1KukHfqnujpvigqgDbUP7mzDdauMTGI9qMH3gQJn",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1772010886.085249,
+      "expires": 1772012339.026758,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -35,7 +35,7 @@
       "value": "\"xuanzhaopeng+uitars@gmail.com\"",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1772010886.08526,
+      "expires": 1772012339.026772,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
@@ -45,7 +45,7 @@
       "value": "1",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1772010886.085293,
+      "expires": 1772012339.026783,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
@@ -55,7 +55,7 @@
       "value": "1",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1772010886.0853,
+      "expires": 1772012339.026793,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
@@ -65,7 +65,7 @@
       "value": "\"eyJhdXRoUHJvZmlsZXMiOlt7Im5hbWUiOiJ4dWFuemhhb3BlbmcrdWl0YXJzIiwiZW1haWwiOiJ4dWFuemhhb3BlbmcrdWl0YXJzQGdtYWlsLmNvbSIsImF1dGhUeXBlIjoiQ1JFREVOVElBTFMiLCJ3b3Jrc3BhY2UiOnsiYmFzZUhvc3QiOiJtaXJvLmNvbSIsImRvbWFpbk5hbWUiOiIifX1dfQ==\"",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1772010886.085318,
+      "expires": 1772012339.026814,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -75,7 +75,7 @@
       "value": "3458764618492996877",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1772010886.471995,
+      "expires": 1772012339.291198,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -85,7 +85,7 @@
       "value": "miro.com",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1772010886,
+      "expires": 1772012339,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -95,14 +95,14 @@
       "value": "%7B%22id%22%3A%223458764618492996877%22%2C%22betaUser%22%3Afalse%2C%22domainGroup%22%3A%22PERSONAL%22%7D",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1772010886.472035,
+      "expires": 1772012339.291239,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "X-MR-Browser-ID",
-      "value": "080780fa-63fb-4361-a672-5b4e0846d18e",
+      "value": "6262057f-6361-4202-8231-b80ab8093373",
       "domain": "miro.com",
       "path": "/",
       "expires": -1,
@@ -112,30 +112,30 @@
     },
     {
       "name": "mr-anon-id-1",
-      "value": "%2217b524e7-2bf6-4ee9-a931-8abb99639653%22",
+      "value": "%22c4475889-8191-43c9-9657-7639867864cc%22",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1772010886.472056,
+      "expires": 1772012339.291259,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "OptanonConsent",
-      "value": "isGpcEnabled=0&datestamp=Tue+Feb+25+2025+10%3A14%3A46+GMT%2B0100+(Central+European+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=8bf805c5-332d-41b6-a471-c622eb8dd24b&interactionCount=0&isAnonUser=1&landingPath=NotLandingPage&groups=C0001%3A1%2CC0002%3A0%2CC0003%3A0%2CC0004%3A0&AwaitingReconsent=false",
+      "value": "isGpcEnabled=0&datestamp=Tue+Feb+25+2025+10%3A38%3A59+GMT%2B0100+(Central+European+Standard+Time)&version=202408.1.0&browserGpcFlag=0&isIABGlobal=false&hosts=&consentId=5bb8e90f-cde8-4c2f-85b2-9a76c2e30f25&interactionCount=0&isAnonUser=1&landingPath=https%3A%2F%2Fmiro.com%2Fapp%2F&groups=C0001%3A1%2CC0002%3A0%2CC0003%3A0%2CC0004%3A0",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1772010886,
+      "expires": 1772012339,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "ajs_anonymous_id",
-      "value": "%2217b524e7-2bf6-4ee9-a931-8abb99639653%22",
+      "value": "%22c4475889-8191-43c9-9657-7639867864cc%22",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1772010887,
+      "expires": 1772012340,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -155,47 +155,47 @@
       "value": "%223458764618492996877%22",
       "domain": ".miro.com",
       "path": "/",
-      "expires": 1772010887,
+      "expires": 1772012340,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "AWSALBTG",
-      "value": "kavFm3go8IFG9ldVSIK/wLFuMAlQCIygc/TuqnFg/uB69MkaCuU5pFBQVW+TeAr9U7si+/JJfDo0tW9xreipZVBOZ/ngeudBL+vWj+KalDvSz7Z813B1/io4QG1O0fK57uSOIpwgV7Unmerhltu4W1ttgkTBhp6jBPvb+WTtLnIy",
+      "value": "L59YPpt39d/slNgeiSkEXMNVg8cgsRLzyZGRdCzLmliplyIx5Jje4UNDns96k3bT/jYI1lUa7L4WngdUmOLshlHuD7XE+c9eZuJUK/wW/EM5Fh2dLojsGlnYfzhpbSwJc5Ze9R64Sj+kaFt9fmmFM1nMcoQnZ7BEVfR8OWBkf9Jv",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1741079687.214804,
+      "expires": 1741081140.18046,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "AWSALBTGCORS",
-      "value": "kavFm3go8IFG9ldVSIK/wLFuMAlQCIygc/TuqnFg/uB69MkaCuU5pFBQVW+TeAr9U7si+/JJfDo0tW9xreipZVBOZ/ngeudBL+vWj+KalDvSz7Z813B1/io4QG1O0fK57uSOIpwgV7Unmerhltu4W1ttgkTBhp6jBPvb+WTtLnIy",
+      "value": "L59YPpt39d/slNgeiSkEXMNVg8cgsRLzyZGRdCzLmliplyIx5Jje4UNDns96k3bT/jYI1lUa7L4WngdUmOLshlHuD7XE+c9eZuJUK/wW/EM5Fh2dLojsGlnYfzhpbSwJc5Ze9R64Sj+kaFt9fmmFM1nMcoQnZ7BEVfR8OWBkf9Jv",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1741079687.215085,
+      "expires": 1741081140.180501,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "AWSALB",
-      "value": "LHhCIqlu8qwtpgGs2EOhEJscHx0YYSolyNYnzmrnW78lPKx1r+sQ159Uq1En+YsSKDEPsjUe6rDdiaoGDBXykcwLFZQ6zuxGD2PBdpFPAiE7FJaEuJcpRtP0K0HJ",
+      "value": "LKpUJH/9S77nKSDFMYmEfKkRBGk9G+M58b6f6TpUA+SJ67CeA84xcMdQ1wrlOUt4zQI32Dwbc0iW50SjxpzzLcKOpxdB8rlRgwDLtFs+M2dySiMpFUiE/2H+HMN4",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1741079687.215162,
+      "expires": 1741081140.180519,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "AWSALBCORS",
-      "value": "LHhCIqlu8qwtpgGs2EOhEJscHx0YYSolyNYnzmrnW78lPKx1r+sQ159Uq1En+YsSKDEPsjUe6rDdiaoGDBXykcwLFZQ6zuxGD2PBdpFPAiE7FJaEuJcpRtP0K0HJ",
+      "value": "LKpUJH/9S77nKSDFMYmEfKkRBGk9G+M58b6f6TpUA+SJ67CeA84xcMdQ1wrlOUt4zQI32Dwbc0iW50SjxpzzLcKOpxdB8rlRgwDLtFs+M2dySiMpFUiE/2H+HMN4",
       "domain": "miro.com",
       "path": "/",
-      "expires": 1741079687.215196,
+      "expires": 1741081140.180536,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -879,7 +879,7 @@
         },
         {
           "name": "__anon_id",
-          "value": "\"eb9a11d9-d5a1-4b99-96c4-e1c69ff56bdf\""
+          "value": "\"5bb792de-ec27-46fe-bdda-71b98f694dc9\""
         },
         {
           "name": "SPLITIO.split.SE-1229_spaces_in_search",
@@ -3219,7 +3219,7 @@
         },
         {
           "name": "SPLITIO.splits.lastUpdated",
-          "value": "1740474887087"
+          "value": "1740476339971"
         },
         {
           "name": "SPLITIO.split.MA-2614-glean-ai",
