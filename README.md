@@ -37,7 +37,10 @@ When I execute the same test, here are the GPU usages for `UI-Tars:7B` and `UI-T
 
 ## Quick start
 ```bash
-yarn
+ollama pull nomic-embed-text # we must have ollma first
+ollama serve # start ollma 
+
+yarn 
 
 cp .env.example .env #then fill up the variables
 
