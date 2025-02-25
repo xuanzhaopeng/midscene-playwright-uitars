@@ -24,7 +24,16 @@ test.describe('miro', () => {
 
         await page.goto("https://miro.com/app/dashboard")
         expect(page.url()).toBe("https://miro.com/app/dashboard/")
-        await ai(`I am a free plan user, I am in the dashboard page, I create any kinds of board. I don't use any templates just an empty board. In board page, I create a sticky note with text "I am AI Agent" in the center of the screen.`)
-        await aiAssert(`a sticky note contains exact text "I am AI Agent" is visible`)
+        /*
+        await ai(`I am a free plan user, I am in the dashboard page, I create a board.
+            When a board is created, I was be navigated to the board page.
+            So I **must** wait until the Template Popup is visible.
+            And If there is a popup about template, I don't use any template.
+            then I create a default sticky note with text "I am AI Agent" in the center of the screen.`)
+        await aiAssert(`a sticky note contains exact text "I am AI Agent" is visible`)*/
+        await ai(`I create a new blank board.
+            In the board, I create a sticky note.
+            And I put "I am an AI Agent" to the sticky note`)
+        await aiAssert(`a sticky note contains exact text "I am an AI Agent" is visible`)
     })
 })
