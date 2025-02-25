@@ -18,7 +18,7 @@ dotenv.config({
 export default defineConfig({
   testDir: './e2e',
   /* required by midscene */
-  timeout: 240 * 1000,
+  timeout: 120 * 1000,
 
   /* Run tests in files in parallel */
   fullyParallel: true,

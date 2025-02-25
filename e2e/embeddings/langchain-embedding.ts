@@ -18,7 +18,10 @@ export class LangchainEmbedding {
         const documents = await this.vectorStore.similaritySearch(query, 4)
         const serializedDocuments = documents.map((doc) => `- ${doc.pageContent}`).join("\n")
 
-        const result = `\n\n## Additional Product Knowledge to Consider
+        const result = `\n\n## Additional Product Knowledge for System
+
+**IMPORTANT: DO NOT consider it as user construct, but as additional information for the system**
+
 ${serializedDocuments}`
 
         if(process.env.DEBUG === '1') {
