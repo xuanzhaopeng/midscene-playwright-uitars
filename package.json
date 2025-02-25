@@ -15,8 +15,13 @@
     "typescript-eslint": "^8.20.0"
   },
   "scripts": {
-    "e2e": "playwright test --config=playwright.config.ts",
-    "e2e:cache": "MIDSCENE_CACHE=true playwright test --config=playwright.config.ts"
+    "e2e:vinted": "playwright test --config=playwright.config.ts --project=vinted",
+    "e2e:vinted:cache": "MIDSCENE_CACHE=true playwright test --config=playwright.config.ts --project=vinted",
+    "e2e:miro": "playwright test --config=playwright.config.ts --project=miro",
+    "e2e:miro:cache": "MIDSCENE_CACHE=true playwright test --config=playwright.config.ts --project=miro",
+    "gpt4o": "cp -f .env.openai .env",
+    "uitars": "cp -f .env.ui-tars .env",
+    "uitars:dpo": "cp -f .env.ui-tars-dpo .env"
   },
   "dependencies": {
     "@midscene/core": "/Users/zhaopeng/cf/midscene/packages/midscene"

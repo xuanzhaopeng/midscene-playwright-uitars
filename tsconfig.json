@@ -11,7 +11,7 @@
 		"moduleResolution": "node",
 		"forceConsistentCasingInFileNames": true,
 		"outDir": "target/",
-		"types": [],
+		"types": ["node"],
 		"resolveJsonModule": true
 	},
 	"include": ["./e2e"],

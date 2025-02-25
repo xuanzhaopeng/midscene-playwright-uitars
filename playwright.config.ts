@@ -46,9 +46,23 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
+      name: 'vinted',
       use: { ...devices['Desktop Chrome'] },
+      testMatch: 'e2e/vinted.spec.ts',
     },
+    {
+      name: 'miro-setup',
+      testMatch: 'e2e/setup/*.miro.ts',
+    },
+    {
+      name: 'miro',
+      use: { 
+        ...devices['Desktop Chrome'],
+        storageState: 'e2e/.auth/miro.json',
+      },
+      testMatch: 'e2e/miro.spec.ts',
+      dependencies: ['miro-setup']
+    }
 
     // {
     //   name: 'firefox',
