@@ -24,6 +24,8 @@
     "uitars:dpo": "cp -f .env.ui-tars-dpo .env"
   },
   "dependencies": {
-    "@midscene/core": "/Users/zhaopeng/cf/midscene/packages/midscene"
+    "@langchain/ollama": "^0.2.0",
+    "@midscene/core": "/Users/zhaopeng/cf/midscene/packages/midscene",
+    "langchain": "^0.3.19"
   }
 }
