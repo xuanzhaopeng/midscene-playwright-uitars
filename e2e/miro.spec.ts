@@ -19,22 +19,7 @@ test.describe('miro', () => {
         ])
     })
 
-    test.skip("for canvas testing", async ({ page, ai, aiWaitFor, aiAssert }) => {
-        // Requires changes from Midscene - (https://github.com/web-infra-dev/midscene/issues/426)
-        // const searchedRag:string = await rag.search(`I am a free plan customer, I am in the dashboard page, I create a team board. After I am in the board page, I close all popups first, and I create a sticky note with text "I am AI Agent" in the center of the screen.`)
-
-        await page.goto("https://miro.com/app/dashboard")
-        expect(page.url()).toBe("https://miro.com/app/dashboard/")
-        
-        await ai(`A free plan user creates a new board without upgrade, and don't close template popup`)
-        await aiWaitFor(`the template popup is visible`)
-        await ai(`the user closes the template popup`)
-        await ai(`the user creates a sticky note, with text "I am an AI Agent"`)
-        await aiAssert(`a sticky note contains exact text "I am an AI Agent" is visible`)
-    })
-
-
-    test("for canvas testing a single reasoning", async ({ page, ai, aiAssert }) => {
+    test.skip("use reason1 and reason2 to plan tests", async ({ page, ai, aiAssert }) => {
         await page.goto("https://miro.com/app/dashboard")
         expect(page.url()).toBe("https://miro.com/app/dashboard/")
 
@@ -46,4 +31,41 @@ test.describe('miro', () => {
             And the user#A creates a sticky note with desired input "I am an AI Agent"`)
         await aiAssert(`a sticky note contains exact text "I am an AI Agent" is visible`)
     })
+
+    test.skip("[more general]use reason1 and reason2 to plan tests", async ({ page, ai, aiAssert }) => {
+        await page.goto("https://miro.com/app/dashboard")
+        expect(page.url()).toBe("https://miro.com/app/dashboard/")
+
+        await ai(`
+            **ID: ${ uuidv4() }, this is a completely *new* order, forget all memory**
+
+            Given A free plan user#A creates a new board without upgrade,
+            And the user#A creates one sticky note in the left side of the grid, 
+            then user#A creates another sticky note in the right side of the grid,
+            Then the user#A add a line from 1st sticky note to the 2nd sticky note`)
+
+        await aiAssert(`2 sticky notes are connected by a line`)
+    })
+
+
+
+
+
+    test("UI-Tars System-2 Reasoning Validation with non-B2C site", async ({ page, ai, aiAssert }) => {
+        await page.goto("https://miro.com/app/dashboard")
+        expect(page.url()).toBe("https://miro.com/app/dashboard/")
+
+        await ai(`**ID: ${ uuidv4() }, 这是一个新指令，完全忽略之前的记忆，严格按照指令和规则执行，禁止幻想**
+Given A free plan user creates a new board without upgrade,
+And the user creates 2 sticky notes in 2 different side of the grid, 
+Then the user adds a line from 1st sticky note to the 2nd sticky note`)
+
+        await aiAssert(`2 sticky notes are connected by a line`)
+    })
+
+
+
+
+
+
 })

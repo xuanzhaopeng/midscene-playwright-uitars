@@ -47,7 +47,10 @@ export default defineConfig({
   projects: [
     {
       name: 'vinted',
-      use: { ...devices['Desktop Chrome'] },
+      use: { 
+        ...devices['Desktop Chrome'] ,
+        viewport: {width: 1200, height: 820 }
+      },
       testMatch: 'e2e/vinted.spec.ts',
     },
     {

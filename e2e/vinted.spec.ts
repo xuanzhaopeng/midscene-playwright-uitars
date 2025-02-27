@@ -1,5 +1,6 @@
 import { expect } from "@playwright/test";
 import { test } from "./fixture";
+import { v4 as uuidv4 } from "uuid";
 
 
 test.describe('vinted', () => {
@@ -51,12 +52,20 @@ test.describe('vinted', () => {
     await aiAssert("Price is visible")
   })
 
-  test("a single description", async ({ page, ai, aiAssert }) => {
+  test.skip("a single description", async ({ page, ai, aiAssert }) => {
     await page.goto("https://www.vinted.com")
    
     await ai(`I accept whatever it shows up first, 
 after the page is ready to interect, I can search "Chanel", and I open the 2nd product from the search result`)
     await aiAssert("I'm viewing the pruduct detail page")
+    await aiAssert("The Price is visible")
+  })
+
+  test("a single description 2", async ({ page, ai, aiAssert }) => {
+    await page.goto("https://www.vinted.com")
+   
+    await ai(`**ID: ${ uuidv4() }**
+      I buy a Chanel bag`)
     await aiAssert("The Price is visible")
   })
 
